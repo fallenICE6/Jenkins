@@ -1,0 +1,111 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Улучшает читаемость */
+    background-color: #f4f4f4; /* Светло-серый фон */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #444;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+#about img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px; /* Скругленные углы изображения */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Тень для изображения */
+
+}
+
+
+#sales {
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+    justify-content: center; /* Выравниваем по центру */
+}
+
+.product {
+    width: 30%; /* Ширина блока товара, можно изменить */
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Тень для товара */
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Скругленные углы изображения товара */
+}
+
+
+#contact {
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Отступы для улучшения макета */
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+
+/* Отзывчивый дизайн (адаптация под разные размеры экрана) */
+@media (max-width: 768px) {
+    .product {
+        width: 45%; /* Уменьшаем ширину на меньших экранах */
+    }
+}
+
+@media (max-width: 480px) {
+    .product {
+        width: 90%; /* Уменьшаем ширину на очень маленьких экранах */
+    }
+    nav li {
+        float: none; /* Убираем плавающее меню на очень маленьких экранах */
+    }
+    nav a{
+        display: block;
+    }
+}
